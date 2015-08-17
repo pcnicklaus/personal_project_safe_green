@@ -1,0 +1,90 @@
+
+#header {
+    color: #fff;
+/*    background: #18bc9c;*/
+    background-image: url("../images/safe_green_background4.jpg");
+    height: 780px;
+}
+
+/*give the body a bit of padding bc of navbar*/
+body {
+  padding-top: 30px;
+}
+
+/*not working*/
+.navbar brand {
+  padding-top: -10px;
+  margin-top: -10px;
+}
+
+/*font size main paragraph*/
+.container p {
+  font-size: 1.3em;
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Asap', Helvetica, Arial, sans-serif;
+}
+
+/*how do i get the append to stay in the same spot*/
+#total-thc-holder {
+}
+
+#safe-green-title {
+  padding-top: 370px;
+  padding-bottom: 10px;
+  font-size: 5em;
+}
+
+.grey {
+  background: rgba(15, 15, 15, 0.7);
+
+}
+
+.dark-grey-background {
+  background: rgba(124, 131, 123, 0.29);
+  min-width: 100%;
+}
+
+.green-background {
+  background: rgba(29, 106, 25, 0.29);
+  min-width: 100%;
+}
+
+
+#calculators {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right
+}
+
+.form-inline {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form-control {
+  width: 200px;
+}
+
+.recos {
+    color: red;
+    background-color: #18bc9c;
+    height: 100px;
+    margin-left: -10px;
+    margin-top: 30px;
+}
