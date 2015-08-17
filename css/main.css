@@ -33,6 +33,11 @@ p, div {
     font-family: 'Asap', Helvetica, Arial, sans-serif;
 }
 
+#recommendations {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /*how do i get the append to stay in the same spot*/
 #total-thc-holder {
 }

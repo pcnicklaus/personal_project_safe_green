@@ -1,31 +1,62 @@
 // Product Constructor
-// function Product(name, type, thc, image) {
-//   this.name = name,
-//   this.type = type,
-//   this.thc = thc,
-//   this.image = image || "sorry.";
-// }
+function Product(name, type, thc, image) {
+  this.name = name,
+  this.type = type,
+  this.thc = thc,
+  this.image = image || "sorry.";
+}
+
+function Edible(name, type, milligrams, image) {
+  this.name = name,
+  this.type = type,
+  this.milligrams = milligrams,
+  this.image = image;
+ }
 
 // Product Methods
+var marijuanaArray = [];
+var $element = '';
+Product.prototype.createElement = function() {
+  $element = $('<div class="col-sm-2"><img src="'+this.image+'" class="img-responsive" alt=""><h4>'+ this.name +'</h4><p>'+this.type+'<br>'+this.thc+'% </p></div>');
+  marijuanaArray.push($element);
+  return $element;
+};
 
-// var $element = '';
-// Product.prototype.createElement = function() {
-//   $element = $('<div class="col-sm-2"><h4>'+this.name+'</h4><p>'+this.thc+'</p></div>');
-//   return $element;
-// };
+Product.prototype.renderPot = function() {
+  for (var i = 0; i < marijuanaArray.length; i++) {
+    $('#marijuana-reco-holder').append(marijuanaArray[i]);
+    }
+};
 
+var edibleArray = [];
+var $edibleElement = '';
+Product.prototype.createEdibleElement = function() {
+  $edibleElement = $('<div class="col-sm-2"><img src="'+this.image+'" class="img-responsive" alt=""><h4>'+ this.name +'</h4><p>'+this.type+'<br>'+this.thc+'% </p></div>');
+  edibleArray.push($edibleElement);
+  return $element;
+};
+Product.prototype.renderEdible = function() {
+  for (var i = 0; i < edibleArray.length; i++) {
+    $('#edible-reco-holder').append(edibleArray[i]);
+    }
+};
 
-// Product.prototype.render = function() {
-//   $('#reco-holder').html($element);
-// };
+// marijuana
+var whiteWidow = new Product('white widow', 'sativa', 15, "images/Cataract-Kush-Marijuana-Bud.jpg");
+var durbanPoison = new Product('durban poison', 'sativa', 24, "images/good_pot.jpg");
+var durbanPoison2 = new Product('durban poison2', 'sativa', 243, "images/grandpurp.jpg");
+var durbanPoison3 = new Product('durban poison3', 'sativa', 24, "images/33009demo11organicjackherer002.jpg");
+var durbanPoison4 = new Product('durban poison4', 'sativa', 24, "images/rare_dankness_seeds_-_ghost_train_haze_nr1.jpg");
+var durbanPoison5 = new Product('durban poison5', 'sativa', 24, "images/Macro_cannabis_bud.jpg");
 
-// var whiteWidow = new Product('white widow', 'sativa', 15, "none");
-// console.log(whiteWidow.createElement());
-// whiteWidow.createElement();
-// whiteWidow.render();
-
- // for (var i = 0; i < this.games.length; i++) {
- //    $('#library-div').append("<p='double-click-remove'>" + this.games[i].title + " - " + this.games[i].genre + "</p>");
+// edibles
+var whiteWidow1 = new Edible ('white widow', 'sativa', 15, "images/Cataract-Kush-MarijuanaEdible -Bud.jpg");
+var whiteWidow2 = new Edible ('white widow', 'sativa', 15, "images/Cataract-Kush-MarijuanaEdible -Bud.jpg");
+var durbanPoison6 = new Edible ('durban poison', 'sativa', 24, "images/good_pot.jpg");
+var durbanPoison7 = new Edible ('durban poison2', 'sativa', 243, "images/grandpurp.jpg");
+var durbanPoison8 = new Edible ('durban poison3', 'sativa', 24, "images/33009demo11organicjackherer002.jpg");
+var durbanPoison9 = new Edible ('durban poison4', 'sativa', 24, "images/rare_dankness_seeds_-_ghost_train_haze_nr1.jpg");
+var durbanPoison10 = new Edible ('durban poison5', 'sativa', 24, "images/Macro_cannabis_bud.jpg");
 
 
 $(document).on('ready', function() {
@@ -35,6 +66,14 @@ $(document).on('ready', function() {
     keyboard:false,
     show:true
   });
+
+  whiteWidow.createElement();
+  durbanPoison.createElement();
+  durbanPoison2.createElement();
+  durbanPoison3.createElement();
+  durbanPoison4.createElement();
+  durbanPoison5.createElement();
+  durbanPoison5.renderPot();
 
   // age verification check
   function ageVerification() {
