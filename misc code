@@ -1,0 +1,166 @@
+/*.recos {
+    background-color: #18bc9c;
+    height: 100px;
+    margin-left: -10px;
+    margin-top: 30px;
+}*/
+
+/*
+.form-inline {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}*/
+
+
+
+<!-- About DropDown Menu Stuffs -->
+               <!-- <li class="dropdown">
+                <a href="#calculators" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculators<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Smoking</a></li>
+                  <li><a href="#">Edibles</a></li>
+                </ul>
+              </li> -->
+
+
+              <!-- Reco's navbar dropdown stuffs -->
+              <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reco's <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Type</a></li>
+                  <li><a href="#">THC</a></li>
+                  <li><a href="#">Method</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Activities</a></li>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">Fun</a></li>
+                </ul>
+              </li> -->
+
+Product.prototype.render = function() {
+  for (var i = 0; i < marijuanaArray.length; i++) {
+    $('#marijuana-reco-holder').html(libraryArray[i].libraryTitle);
+              libraryArray[i].games.push(newGame);
+              console.log(libraryArray);
+              libraryArray[i].render();
+
+
+var $element = '';
+Product.prototype.createElement = function() {
+  $element = $('<div class="col-sm-2"><img src="'+this.image+'"class=img-responsive" alt=""><h4>'+ this.name +'</h4><p>'+this.type+'<br>'+this.thc+'% </p></div>');
+  return $element;
+};
+
+            <div style="background-image:url(images/Cataract-Kush-Marijuana-Bud.jpg)">
+              <br>
+              <br>
+              <h4>Brian</h3>
+              <p>Cataract Kush</p>
+              <p>Sattiva</p>
+              <p>24%</p>
+
+            </div>
+
+<img src="cinqueterre.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+
+              <p>Our running total of total thc per gram is now at + VAR +. The final factor we will take into effect is weight. Again, the science is lacking but there was one study that stated that the minimum dose of THC required to get a person high is 10 micrograms per kilogram (2.2lbs) of body weight. Which would mean that a 150 lb person would only need to consume 680 micrograms of thc which is not even a full milligram of THC. Considering the standard serving size for an edible is 10 milligrams AND their absorption rates are much higher then smoking, for our purposes and in the interest of safety, we are going to set the base level of thc 4 milligrams of THC to provide a high for a 150 lb person.
+
+
+
+  //   for ( var weight in smokingObject) {
+  //           console.log("test")
+
+  //     if ( userWeight === weight ) {
+  //       for ( var metabolism in smokingObject) {
+  //         if ( userMetabolism === metabolism) {
+  //           console.log("test")
+  //         }
+  //       }
+  //     }
+  //   }
+  // });
+
+
+  // for (var i = 0; i < smokingObject.length; i++) {
+  //   if (smokingObject[i].metabolism === "high") {
+  //     if(smokingObject[i].weight === 100) {
+  //       if(smokingObject[i].thc === 10) {
+  //         return smokingObject[i].amount;
+  //       }
+  //       if(smokingObject[i].thc === 15) {
+
+  //       }
+  //       if(smokingObject[i].thc === 20) {
+
+  //       }
+  //     }
+  //     if(smokingObject[i].weight === 150) {
+  //       if(smokingObject[i].thc === 10) {
+
+  //       }
+  //       if(smokingObject[i].thc === 15) {
+
+  //       }
+  //       if(smokingObject[i].thc === 20) {
+
+  //       }
+  //     }
+  //     if(smokingObject[i].weight === 200) {
+  //       if(smokingObject[i].thc === 10) {
+
+  //       }
+  //       if(smokingObject[i].thc === 15) {
+
+  //       }
+  //       if(smokingObject[i].thc === 20) {
+
+  //       }
+  //     }
+  //   }
+  // }
+
+  // var smokingObject = [
+  //   {metabolism: "high", weight:100, thc: 10, amount: 0.5},
+  //   {metabolism: "high", weight:150, thc: 10, amount: 0.6},
+  //   {metabolism: "high", weight:200, thc: 10, amount: 0.7},
+  //   {metabolism: "high", weight:100, thc: 15, amount: 0.35},
+  //   {metabolism: "high", weight:150, thc: 15, amount: 0.5},
+  //   {metabolism: "high", weight:200, thc: 15, amount: 0.65},
+  //   {metabolism: "high", weight:100, thc: 20, amount: 0.3},
+  //   {metabolism: "high", weight:150, thc: 20, amount: 0.35},
+  //   {metabolism: "high", weight:200, thc: 20, amount: 0.4},
+
+  //   {weight:100, metabolism: "med", thc: 10, amount: 0.4},
+  //   {weight:150, metabolism: "med", thc: 10, amount: 0.5},
+  //   {weight:200, metabolism: "med", thc: 10, amount: 0.6},
+  //   {weight:100, metabolism: "med", thc: 15, amount: 0.3},
+  //   {weight:150, metabolism: "med", thc: 15, amount: 0.4},
+  //   {weight:200, metabolism: "med", thc: 15, amount: 0.5},
+  //   {weight:100, metabolism: "med", thc: 20, amount: 0.25},
+  //   {weight:150, metabolism: "med", thc: 20, amount: 0.3},
+  //   {weight:200, metabolism: "med", thc: 20, amount: 0.35},
+
+  //   {weight:100, metabolism: "low", thc: 10, amount: 0.35},
+  //   {weight:150, metabolism: "low", thc: 10, amount: 0.45},
+  //   {weight:200, metabolism: "low", thc: 10, amount: 0.55},
+  //   {weight:100, metabolism: "low", thc: 15, amount: 0.25},
+  //   {weight:150, metabolism: "low", thc: 15, amount: 0.35},
+  //   {weight:200, metabolism: "low", thc: 15, amount: 0.15},
+  //   {weight:100, metabolism: "low", thc: 20, amount: 0.2},
+  //   {weight:150, metabolism: "low", thc: 20, amount: 0.25},
+  //   {weight:200, metabolism: "low", thc: 20, amount: 0.3}
+  // ];
+
+  // var edibleObject = [
+  //   {weight:100, metabolism: "high", amount: 0.4},
+  //   {weight:150, metabolism: "high", amount: 0.5},
+  //   {weight:200, metabolism: "high", amount: 0.6},
+
+  //   {weight:100, metabolism: "med", amount: 0.3},
+  //   {weight:150, metabolism: "med", amount: 0.4},
+  //   {weight:200, metabolism: "med", amount: 0.5},
+
+  //   {weight:100, metabolism: "low", amount: 0.25},
+  //   {weight:150, metabolism: "low", amount: 0.35},
+  //   {weight:200, metabolism: "low", amount: 0.45}
+  // ];

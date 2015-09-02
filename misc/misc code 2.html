@@ -1,0 +1,113 @@
+  $('#user-recoArray-submit').on('click', function(event) {
+    event.preventDefault();
+    var userSelect = $('#user-recoArray-select').val();
+    if (userSelect === "1") {
+      $('#dynamic-reco-holder')
+          .html('<div class="form-group"><div class="row"><div class="col-sm-2"><label for="Name">Name</label><input class="form-control" id="name-reco" type="text"></div><div class="col-sm-2"><label for="strain">Sativa or Indica</label><input class="form-control" id="strain-reco" type="text"></div><div class="col-sm-2"><label for="THC Percentage">THC Percentage</label><input class="form-control" id="smoking-thc-reco" type="text"></div><div class="col-sm-2"><label for="comment">Comment:</label><textarea class="form-control" rows="3" id="user-reco-comment"></textarea></div><div class="col-sm-2"><label for="user-reco-dynamic-submit">Here it is.</label><button class="form-control" id="user-reco-dynamic-marijuana-submit" type="submit" class="btn btn-default">Submit</button></div></div></div>');
+      }
+    else if (userSelect === "2") {
+      $('#dynamic-reco-holder')
+          .html('<div class="form-group"><div class="row"><div class="col-sm-2"><label for="Name">Name</label><input class="form-control" id="name-edible-reco" type="text"></div><div class="col-sm-2"><label for="strain">Sativa or Indica</label><input class="form-control" id="strain-edible-reco" type="text"></div><div class="col-sm-2"><label for="Milligrams of THC">Milligrams of THC</label><input class="form-control" id="edible-thc-reco" type="text"></div><div class="col-sm-2"><label for="comment">Comment:</label><textarea class="form-control" rows="3" id="user-edible-reco-comment"></textarea></div><div class="col-sm-2"><label for="user-reco-dynamic-submit">Here it is.</label><button class="form-control" id="user-reco-dynamic-edible-submit" type="submit" class="btn btn-default">Submit</button></div></div></div>');
+      }
+
+   // else if (userSelect === "3") {
+    //   $('#dynamic-reco-holder')
+    //       .html('<div class="form-group"><div class="row"><div class="col-sm-2"><label for="Name">Name</label><input class="form-control" id="name-event-reco" type="text"></div><div class="col-sm-2"><label for="event type">Event Type</label><input class="form-control" id="strain-edible-reco" type="text"></div><div class="col-sm-2"><label for="Milligrams of THC">Milligrams of THC</label><input class="form-control" id="edible-thc-reco" type="text"></div><div class="col-sm-2"><label for="comment">Comment:</label><textarea class="form-control" rows="3" id="user-edible-reco-comment"></textarea></div><div class="col-sm-2"><label for="user-reco-dynamic-submit">Here it is.</label><button class="form-control" id="user-reco-dynamic-submit" type="submit" class="btn btn-default">Submit</button></div></div></div>');
+
+<div class="form-group"><div class="row"><div class="col-sm-2"><label for="Name">Name</label><input class="form-control" id="name-reco" type="text"></div><div class="col-sm-2"><label for="strain">Sativa or Indica</label><input class="form-control" id="strain-reco" type="text"></div><div class="col-sm-2"><label for="THC Percentage">THC Percentage</label><input class="form-control" id="smoking-thc-reco" type="text"></div><div class="col-sm-2"><label for="comment">Comment:</label><textarea class="form-control" rows="3" id="user-reco-comment"></textarea></div><div class="col-sm-2"><label for="user-reco-dynamic-submit">It's ready</label><button class="form-control" id="user-reco-dynamic-submit" type="submit" class="btn btn-default">Submit</button></div></div></div>
+
+
+
+<div class="form-group" id="user-reco-form">
+
+  <label for="user-recoArray-select">What do you want to recommend?</label>
+  <select class="form-control" id="user-recoArray-select">
+    <option value=1>Marijuana</option>
+    <option value=2>Edible</option>
+    <option value=3>Event</option>
+    <option value=4>Activity</option>
+  </select>
+  <br>
+  <div id="dynamic-reco-holder"></div>
+</div>
+
+
+  <select class="selectpicker">
+    <option>Mustard</option>
+    <option>Ketchup</option>
+    <option>Relish</option>
+  </select>
+
+
+<form class="form-horizontal">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>submit a recommendation</legend>
+
+    <!-- Select Basic -->
+    <div class="control-group">
+      <label class="control-label" for="selectbasic">What kind of Recommendation</label>
+      <div class="controls">
+        <select id="selectbasic" name="selectbasic" class="input-xlarge">
+          <option value="0" id="marijuana-reco-select">Marjiuana</option>
+          <option value="1" id="edible-reco-select">Edible</option>
+          <option value="2" id="event-reco-select">Event</option>
+          <option value="3" id="activity-reco-select">Activity</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="textinput">Text Input</label>
+      <div class="controls">
+        <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge">
+        <p class="help-block">help</p>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="textinput">Text Input</label>
+      <div class="controls">
+        <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge">
+        <p class="help-block">help</p>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="textinput">Text Input</label>
+      <div class="controls">
+        <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge">
+        <p class="help-block">help</p>
+      </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="control-group">
+      <label class="control-label" for="textarea">Text Area</label>
+      <div class="controls">
+        <textarea id="textarea" name="textarea">default text</textarea>
+      </div>
+    </div>
+
+    <!-- File Button -->
+    <div class="control-group">
+      <label class="control-label" for="filebutton">File Button</label>
+      <div class="controls">
+        <input id="filebutton" name="filebutton" class="input-file" type="file">
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="control-group">
+      <label class="control-label" for="singlebutton">Single Button</label>
+      <div class="controls">
+        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+      </div>
+    </div>
+
+</fieldset>
+</form>

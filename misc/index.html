@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <!-- need to figure out to do this as a popup window -->
+        <div class="form" id="age-verification-window">
+          <form name="age-verification-form">
+            <h3>You must be 21 or over to enter</h3>
+            <input class="age-ver" type="text" id="month" placeholder="Month" maxlength="2">
+            <input class="age-ver" type="text" id="day" placeholder="Day" maxlength="2">
+              <!-- somehow it passes if i put in 0 0 20 -->
+            <input class="age-ver" type="text" id="year" placeholder="Year" minlength="4" maxlength="4">
+            <input type="submit" id="age-verification-submit">
+          </form>
+        </div> <!-- form -->
+      </div> <!-- end col-sm-12 -->
+
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+
+    <form class="form-horizontal">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>submit a recommendation</legend>
+
+    <!-- Select Basic -->
+    <div class="control-group">
+      <label class="control-label" for="selectbasic">What kind of Recommendation</label>
+      <div class="controls">
+        <select id="selectbasic" name="selectbasic" class="input-xlarge">
+          <option value="0" id="marijuana-reco-select">Marjiuana</option>
+          <option value="1" id="edible-reco-select">Edible</option>
+          <option value="2" id="event-reco-select">Event</option>
+          <option value="3" id="activity-reco-select">Activity</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="textinput">Text Input</label>
+      <div class="controls">
+        <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge">
+        <p class="help-block">help</p>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="textinput">Text Input</label>
+      <div class="controls">
+        <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge">
+        <p class="help-block">help</p>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="textinput">Text Input</label>
+      <div class="controls">
+        <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge">
+        <p class="help-block">help</p>
+      </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="control-group">
+      <label class="control-label" for="textarea">Text Area</label>
+      <div class="controls">
+        <textarea id="textarea" name="textarea">default text</textarea>
+      </div>
+    </div>
+
+    <!-- File Button -->
+    <div class="control-group">
+      <label class="control-label" for="filebutton">File Button</label>
+      <div class="controls">
+        <input id="filebutton" name="filebutton" class="input-file" type="file">
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="control-group">
+      <label class="control-label" for="singlebutton">Single Button</label>
+      <div class="controls">
+        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+      </div>
+    </div>
+
+</fieldset>
+</form>
+
+        <div class="form-group">
+                <div class="row">
+                  <div class="col-sm-2">
+                  <label for="Name">Name</label>
+                  <input class="form-control" id="name-reco" type="text">
+                  </div>
+                  <div class="col-sm-2">
+                  <label for="strain">Sativa or Indica</label>
+                  <input class="form-control" id="strain-reco" type="text">
+                  </div>
+                  <div class="col-sm-2">
+                  <label for="THC Percentage">THC Percentage</label>
+                  <input class="form-control" id="smoking-thc-reco" type="text">
+                  </div>
+                  <div class="col-sm-2">
+                  <button id="user-reco-dynamic-submit" type="submit" class="btn btn-default">Submit</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="comment">Comment:</label>
+                  <textarea class="form-control" rows="8" id="user-reco-comment"></textarea>
+                </div>
+              </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

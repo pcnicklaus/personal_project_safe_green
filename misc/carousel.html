@@ -1,0 +1,65 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 120%;
+      height: 600px;
+}
+
+/* Carousel Overlay */
+.carousel-overlay {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  font-size: 3.5em;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+
+}
+
+.carousel-overlay .btn-lg {
+    font-size: 1.75em;
+    padding: 10px 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid blue;
+    border-radius: 6px;
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/ce/bd/40/cebd407a73734505057f8470677510f9.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="http://i.huffpost.com/gen/1126725/images/o-STREET-ART-facebook.jpg" alt="Chania" >
+        </div>
+
+        <div class="item">
+          <img src="https://waamblog.files.wordpress.com/2013/08/banksy-art-abstract-no-ball-games.jpg" alt="Flower">
+        </div>
+
+        <!-- carousel over lay -->
+        <div class="container carousel-overlay text-right">
+
+           <h1>Share your world.</h1>
+           <p class="lead">We're helping unite people through shared experiences</p>
+           <a class="btn btn-lg btn-info fp-buttons" href="#">
+           <span class="fa fa-dollar"></span> Learn How!
+           </a>
+
+        </div>
+
+      </div>
+  </div>

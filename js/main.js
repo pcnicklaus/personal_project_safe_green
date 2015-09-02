@@ -3,9 +3,10 @@ function Product(name, type, thc, image) {
   this.name = name,
   this.type = type,
   this.thc = thc,
-  this.image = image || "sorry.";
+  this.image = image || "https://tcrf.net/images/4/4d/Hamsterheroes_placeholder.png";
 }
 
+// edible constructo
 function Edible(name, type, milligrams, image) {
   this.name = name,
   this.type = type,
@@ -13,11 +14,27 @@ function Edible(name, type, milligrams, image) {
   this.image = image;
  }
 
+ // product instances
+var whiteWidow = new Product('white widow', 'sativa', 15, "images/Cataract-Kush-Marijuana-Bud.jpg");
+var durbanPoison = new Product('durban poison', 'sativa', 24, "images/good_pot.jpg");
+var durbanPoison2 = new Product('durban poison2', 'sativa', 243, "images/grandpurp.jpg");
+var durbanPoison3 = new Product('durban poison3', 'sativa', 24, "images/33009demo11organicjackherer002.jpg");
+var durbanPoison4 = new Product('durban poison4', 'sativa', 24, "images/rare_dankness_seeds_-_ghost_train_haze_nr1.jpg");
+var durbanPoison5 = new Product('durban poison5', 'sativa', 24, "images/Macro_cannabis_bud.jpg");
+
+// edible instances
+var edible1 = new Edible ('cheeba chews', 'sativa', 15, "images/cheeba_chews.jpeg");
+var edible2 = new Edible ('jambo super food', 'sativa', 15, "images/edible_2.jpg");
+var edible3 = new Edible ('fudge taffy', 'sativa', 24, "images/edible_fudge_taffy.png");
+var edible4 = new Edible ('gummy bears', 'sativa', 243, "images/edible_gummies.png");
+var edible5 = new Edible ('chocolate pretzels', 'sativa', 24, "images/edible_pretzel.png");
+var edible6 = new Edible ('cinna-mints', 'sativa', 24, "images/edible.cinnamints.png");
+
 // Product Methods
 var marijuanaArray = [];
 var $element = '';
 Product.prototype.createElement = function() {
-  $element = $('<div class="col-sm-2"><img src="'+this.image+'" class="img-responsive" alt=""><h4>'+ this.name +'</h4><p>'+this.type+'<br>'+this.thc+'% </p></div>');
+  $element = $('<div class="col-xs-6 col-md-2"><img src="'+this.image+'" class="img-responsive" alt=""><h4>'+ this.name +'</h4><p>'+this.type+'<br>'+this.thc+'% </p></div>');
   marijuanaArray.push($element);
   return $element;
 };
@@ -28,45 +45,34 @@ Product.prototype.renderPot = function() {
     }
 };
 
+// Edible Methods
 var edibleArray = [];
 var $edibleElement = '';
-Product.prototype.createEdibleElement = function() {
-  $edibleElement = $('<div class="col-sm-2"><img src="'+this.image+'" class="img-responsive" alt=""><h4>'+ this.name +'</h4><p>'+this.type+'<br>'+this.thc+'% </p></div>');
+Edible.prototype.createEdibleElement = function() {
+  $edibleElement = $('<div class="col-xs-6 col-md-2"><img src="'+this.image+'" class="img-responsive" alt=""><h4>'+ this.name +'</h4><p>'+this.type+'<br>'+this.milligrams+'mg </p></div>');
   edibleArray.push($edibleElement);
-  return $element;
+  return $edibleElement;
 };
-Product.prototype.renderEdible = function() {
+Edible.prototype.renderEdible = function() {
   for (var i = 0; i < edibleArray.length; i++) {
     $('#edible-reco-holder').append(edibleArray[i]);
     }
 };
 
-// marijuana
-var whiteWidow = new Product('white widow', 'sativa', 15, "images/Cataract-Kush-Marijuana-Bud.jpg");
-var durbanPoison = new Product('durban poison', 'sativa', 24, "images/good_pot.jpg");
-var durbanPoison2 = new Product('durban poison2', 'sativa', 243, "images/grandpurp.jpg");
-var durbanPoison3 = new Product('durban poison3', 'sativa', 24, "images/33009demo11organicjackherer002.jpg");
-var durbanPoison4 = new Product('durban poison4', 'sativa', 24, "images/rare_dankness_seeds_-_ghost_train_haze_nr1.jpg");
-var durbanPoison5 = new Product('durban poison5', 'sativa', 24, "images/Macro_cannabis_bud.jpg");
+//hide the recommendation form before sight loads
+$('#marijuana-reco-form').hide();
 
-// edibles
-var whiteWidow1 = new Edible ('white widow', 'sativa', 15, "images/Cataract-Kush-MarijuanaEdible -Bud.jpg");
-var whiteWidow2 = new Edible ('white widow', 'sativa', 15, "images/Cataract-Kush-MarijuanaEdible -Bud.jpg");
-var durbanPoison6 = new Edible ('durban poison', 'sativa', 24, "images/good_pot.jpg");
-var durbanPoison7 = new Edible ('durban poison2', 'sativa', 243, "images/grandpurp.jpg");
-var durbanPoison8 = new Edible ('durban poison3', 'sativa', 24, "images/33009demo11organicjackherer002.jpg");
-var durbanPoison9 = new Edible ('durban poison4', 'sativa', 24, "images/rare_dankness_seeds_-_ghost_train_haze_nr1.jpg");
-var durbanPoison10 = new Edible ('durban poison5', 'sativa', 24, "images/Macro_cannabis_bud.jpg");
-
-
+// document on ready!
 $(document).on('ready', function() {
-  // make the modal stay up until it is completed
+
+  // make the age verification window stay up until it is completed
   $('#ageModal').modal({
     backdrop:'static',
     keyboard:false,
     show:true
   });
 
+  // create and append the Product Instances & Edible instances to recommendation section
   whiteWidow.createElement();
   durbanPoison.createElement();
   durbanPoison2.createElement();
@@ -74,6 +80,14 @@ $(document).on('ready', function() {
   durbanPoison4.createElement();
   durbanPoison5.createElement();
   durbanPoison5.renderPot();
+
+  edible1.createEdibleElement();
+  edible2.createEdibleElement();
+  edible3.createEdibleElement();
+  edible4.createEdibleElement();
+  edible5.createEdibleElement();
+  edible6.createEdibleElement();
+  edible6.renderEdible();
 
   // age verification check
   function ageVerification() {
@@ -140,18 +154,15 @@ $(document).on('ready', function() {
       // }
     });
   }
+  // call the function
   ageVerification();
 
   // send them to a new page if user fails the age Verification test
   function ageVerificationFail () {
     window.location.assign("https://www.youtube.com/watch?v=l2cDkl_JRTo");
   }
+  // end age verification stuffs
 
-  var Product = function (name, thc, kind) {
-    this.name = name;
-    this.thc = thc;
-    this.kind = kind;
-  };
 
   // variables
   var userThcLevel = 0;
@@ -162,7 +173,11 @@ $(document).on('ready', function() {
   var thcArray = [];
   var bmiArray = [];
   var weightArray = [];
+  var edibleWeightArray = [];
+  var edibleBMIArray = [];
+  var edibleMetabolismArray = [];
 
+  // hide the different steps for the Smoking ACCORDION
   $('.smoking-step-two').hide();
   $('.smoking-step-three').hide();
 
@@ -171,50 +186,42 @@ $(document).on('ready', function() {
     event.preventDefault();
     $('.smoking-step-two').show(500);
     userSmokingMethod = $('#smoking-method').val();
-    // console.log(userSmokingMethod + "usm");
     userThcLevel = (Number($('#smoking-thc').val()) / 100);
-    // console.log(userThcLevel + "l1 usrTHClevel");
-    // convert total thc to milligrams
     var totalTHC = (userThcLevel * userSmokingMethod) * 1000;
     thcArray.unshift(totalTHC);
     $('#total-thc-holder').html('<div class="well"><br><h4>The total amount of THC available is ' + totalTHC.toFixed(1) + ' milligrams. </h4><br></div>');
 
   });
 
-  // event listener for bmi Submit
+  // event listener for SMOKING - bmi Submit
   $('#bmi-submit').on('click', function (event) {
     event.preventDefault();
     $('.smoking-step-three').show(500);
     userBMI = $('#userBMI').val();
     userTotalSmoking = (userBMI * thcArray[0]);
-    // console.log(userTotalSmoking + " lbmi usrTotalSmoking");
-    // userTotalSmoking.toFixed(1);
     bmiArray.unshift(userTotalSmoking);
     $('#user-total-smoking-holder').html('<div class="well"><br><h4>The total amount of THC available considering your BMI is ' + userTotalSmoking.toFixed(1) + ' milligrams. </h4><br></div>');
 
   });
 
+  // event listener for SMOKING - WEIGHT - Submit
     $('#weight-submit').on('click', function (event) {
     event.preventDefault();;
     userWeight = Number($('#user-weight').val());
-    // console.log(userWeight + " lwt userweight");
     userTotalForHigh = (userWeight * 0.0334) * userBMI;
     console.log(userBMI + " testbmi");
-    // console.log(bmiArray[0] + " THC array 0");
     var holder = (userTotalForHigh / bmiArray[0]);
-    // recommendation = holder.toFixed(2);
     var recommendationPercent = holder * 100;
-    // console.log(recommendationPercent + "recoP")
-    // console.log(recommendation + "reco");
     $('#recommendation-holder').html('<div class="well"><h4>The amount to start with is ' + userTotalForHigh.toFixed(1) + ' milligrams.</h4><h4>Which would be about ' + recommendationPercent.toFixed(1) + "% of a gram.</h4></div>");
   });
 
-    var edibleWeightArray = [];
-    var edibleBMIArray = [];
-    var edibleMetabolismArray = [];
 
+    // EDIBLES ACCORDION START
+
+    // hide steps two and three of edibles accordion
   $('.edibles-step-two').hide();
   $('.edibles-step-three').hide();
+
   // edible weight submit event listener
   $('#edible-weight-submit').on('click', function (event) {
     event.preventDefault();
@@ -225,7 +232,7 @@ $(document).on('ready', function() {
     $('#edible-step-one-holder').html('<div class="well"><h4>Per your weight, we recommend starting with ' + edibleWeight.toFixed(1) + ' grams.</h4></div>');
   });
 
-
+  // edibles BMI accordion Event listener
   $('#bmi-edible-submit').on('click', function (event) {
     event.preventDefault();
     $('.edibles-step-three').show(500);
@@ -235,7 +242,7 @@ $(document).on('ready', function() {
     $('#edible-step-two-holder').html('<div class="well"><h4>Taking into account your BMI, your total should be ' + edibleTotal.toFixed(1) + ' grams.</h4></div>');
   });
 
-
+  // edibles METABOLISM accoridon EVENT Listener
   $('#metabolism-edible-submit').on('click', function (event) {
     event.preventDefault();
     var edibleFinalTotal = ($('#userEdibleMetabolism').val() * edibleBMIArray[0]);
@@ -244,7 +251,25 @@ $(document).on('ready', function() {
   });
 
 
+  //RECOMMENDATION SECTION
 
+  // make recommendation BUTTON event listener - jUST opens the DIALOG box for making recommendation
+  $('#marijuana-reco-button').on('click', function(event) {
+    event.preventDefault();
+    $('#marijuana-reco-form').toggle('slow');
+  });
 
+   // RECOMMNDATION FORM event listener
+  $('#user-reco-marijuana-submit').on('click', function() {
+    var name = $('#name-reco').val();
+    var type = $('#strain-reco').val();
+    var thc = $('#smoking-thc-reco').val();
+    var holder = new Product(name, type, thc);
+    // console.log(holder + " holder");
+    // console.log(typeof(holder));
+    holder.createElement();
+    holder.renderPot();
+
+  });
 
 });

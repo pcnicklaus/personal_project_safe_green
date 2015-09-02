@@ -1,0 +1,159 @@
+ <div class="row">
+      <div class="col-sm-12 center">
+        <h3>Smoking Calculator</h3>
+      </div>
+    </div> <!-- row -->
+    <div class="row" id="smoking-step-one">
+      <div class="col-sm-5 col-sm-offset-2 smoking-step-one">
+          <h4>Step One:</h4>
+          <p>One of the most visible and relevant statistics that can truly help one understand how much marijuana to consume comes from this formula:
+          </p>
+
+          <div class="well"> THC percentage  x  THC transfer rate of the smoking Method </div>
+          <p>
+            The thc percentage comes is based on 1 gram system so 20% thc means there is 200 milligrams of THC in one gram. Pop your numbers in the calculator to get this first value:
+          </p>
+      </div>
+      <div class="col-sm-2 smoking-step-one">
+          <br>
+          <br>
+          <label for="THC Percentage">THC Percentage</label>
+          <input class="form-control" id="smoking-thc" type="text">
+          <p> X </p>
+          <label for="Smoking Method Select">Smoking Method</label>
+          <select class="form-control" id="smoking-method">
+            <option value="0.20">joint</option>
+            <option value="0.25">water pipe</option>
+            <option value="0.18">bong</option>
+            <option value="0.1">vaporizer</option>
+          </select>
+          <button id="smoking-submit" type="submit" class="btn btn-default">Submit</button>
+      </div>
+      <div class="col-sm-2 smoking-step-one">
+          <br>
+          <div id="total-thc-holder"></div>
+      </div>
+    </div> <!-- end row -->
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-2 smoking-step-two">
+          <h4>Step Two:</h4>
+          <p>Now, how we use this number, is a bit of challenge for several reasons. First and again, there is little clinical research, second, this figure is going to vary from person to person based on several factors. One of which is Body Mass Index (BMI). THC is absorbed and stored in fat cells so those with a higher BMI will presumably need to consume less to achieve a high. For our purposes, we’re going to call that a 10% influence on the amount you should use but please do not think this figure is based on anything more then a best guess.
+          </p>
+      </div> <!-- col-sm-5 col-sm-offset-2 -->
+      <div class="col-sm-2 smoking-step-two">
+          <br>
+          <br>
+          <br>
+          <label for="body mass select">Enter Your Body Mass Index</label>
+          <select class="form-control" id="userBMI">
+              <option value="1">low</option>
+              <option value="0.95">medium</option>
+              <option value="0.9">high</option>
+          </select>
+          <button id="bmi-submit" type="submit" class="btn btn-default">Submit</button>
+      </div> <!-- col-sm-5 col-sm-offset-2 -->
+      <div class="col-sm-2 smoking-step-two">
+          <div id="user-total-smoking-holder"></div>
+      </div>
+    </div> <!-- end row -->
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-2 smoking-step-three">
+          <h4>Step Three:</h4>
+          <p>The final factor we will take into effect is weight. One study stated that the minimum dose of THC required to get a person high is 10 micrograms per kilogram (2.2lbs) of body weight. Which would mean that a 150 lb person would only need to consume 680 micrograms of thc which is not even a full milligram of THC. Considering the standard serving size for an edible is 10 milligrams AND their absorption rates are much higher then smoking, for our purposes and in the interest of safety, we are going to set the base level of thc 5 milligrams of THC to provide a high for a 150 lb person.
+          </p>
+      </div> <!-- col-sm-5 col-sm-offset-2 -->
+      <div class="col-sm-2 smoking-step-three">
+          <br>
+          <br>
+          <br>
+          <label for="weight select">Enter Your Weight</label>
+          <input class="form-control" id="user-weight" type="text">
+          <button id="weight-submit" type="submit" class="btn btn-default">Submit</button>
+      </div>
+      <div class="col-sm-2 smoking-step-three">
+          <div id="recommendation-holder"></div>
+      </div>
+    </div> <!-- end row -->
+
+    <div class="container content">
+
+      <h3>Edibles</h3>
+      <p>Much of the reason for the creation of Safe Green comes from the misunderstanding of first time consumers and edibles. Much of this confusion comes from the lack of understanding of how many milligrams of THC is a healthy and responsible first dose. Colorado law makers recently passed new regulations setting the state’s recommended dose at 10 milligrams. We believe that is too high as 10 milligrams is the same amount often recommended by physicians to stem nausea from chemotherapy. </p>
+
+    </div> <!-- container content -->
+    <div class="row">
+      <div class="col-sm-12 center">
+        <h3>Edible Calculator</h3>
+      </div>
+    </div> <!-- row -->
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-2">
+          <h4>Step One:</h4>
+          <p class="edibles-step-one">The first factor that will affect the appropriate dosage is weight. As in the smoking example above, we are going to peg the ratio of 5 mg of THC for a 150lb male with a low BMI and a high metabolism.
+          </p>
+      </div><!-- col-sm-5 col-sm-offset-2 -->
+      <div class="col-sm-2 edibles-step-one">
+          <br>
+          <label for="Weight Select">Enter Your Weight:</label>
+          <input class="form-control" id="edible-weight" type="text">
+          <button id="edible-weight-submit" type="submit" class="btn btn-default">Submit</button>
+      </div> <!-- col-sm-2 -->
+      <div class="col-sm-2 edibles-step-one">
+          <div id="edible-step-one-holder"></div>
+      </div>
+    </div> <!-- row -->
+    <div class="row">
+      <br>
+      <div class="col-sm-5 col-sm-offset-2 edibles-step-two">
+          <h4>Step Two:</h4>
+          <p>With edibles, BMI is also quite important. Especially considering the THC is processed in the liver and is turned into a the more potent 11-hydroxy-THC which tends to have a stronger more sedative effect Again for our purposes, we’re going to call that a 10% influence on the amount you should use but please do not think this figure is based on anything more then a best guess.</p>
+      </div><!-- col-sm-5 col-sm-offset-2 -->
+      <div class="col-sm-2 edibles-step-two">
+          <br>
+          <label for="body mass edible select">Enter Your BMI</label>
+          <select class="form-control" id="userEdibleBMI">
+            <option value="1">low</option>
+            <option value="0.95">medium</option>
+            <option value="0.9">high</option>
+          </select>
+          <button id="bmi-edible-submit" type="submit" class="btn btn-default">Submit</button>
+      </div> <!-- end col-sm-2 -->
+       <div class="col-sm-2 edibles-step-two">
+          <div id="edible-step-two-holder"></div>
+      </div>
+    </div> <!-- end row -->
+    <div class="row" id="edibles-step-three">
+      <br>
+      <div class="col-sm-5 col-sm-offset-2 edibles-step-three">
+          <h4>Step Three:</h4>
+          <p>Metabolism seems to have more of an effect with edibles then with the smoking. The higher the metabolism, the quicker the processing of the THC. Like with BMI, we're going to assume a 10% effect at most.</p>
+      </div>
+      <div class="col-sm-2 edibles-step-three">
+          <label for="metablism edible select">Enter Your Metabolism</label>
+          <select class="form-control" id="userEdibleMetabolism">
+            <option value="0.9">low</option>
+            <option value="0.95">medium</option>
+            <option value="1">high</option>
+          </select>
+          <button id="metabolism-edible-submit" type="submit" class="btn btn-default">Submit</button>
+      </div> <!-- end col-sm-2 -->
+      <div class="col-sm-2 edibles-step-three">
+          <div id="edible-step-three-holder"></div>
+      </div>
+    </div> <!-- end row -->
+
+    <div class="container content">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2 class="center">About us</h2>
+      </div>
+      <div class="col-sm-6 col-sm-offset-3">
+        <p>
+           Safe Green came about due to the many, many stories of new  and first time users visiting colorado who did not have the information necessary to make a responsible choice and because of it, consumed inappropriately large amounts of THC.
+        </p>
+      </div>
+      <div class="col-sm-6 col-sm-offset-3">
+        <p>
+           We understand that a well informed adult will almost invariably make a responsible decision. And that’s what we want to do. Provide adults with the information to enjoy marijuana and share in the joy of being happy.
+        </p>
+      </div>
+    </div><!-- container content -->

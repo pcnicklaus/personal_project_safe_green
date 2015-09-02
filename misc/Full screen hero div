@@ -1,0 +1,72 @@
+Full screen hero image
+html
+    <div id="wrapper">
+      <div id="hero">
+        <div class="header">
+          <h1> Fullscreen Hero image </h1>
+        </div> <!-- end header -->
+      </div> <!-- end hero -->
+      <div id="content">
+        <h2> If nothing goes right for you , go left.</h2>
+        <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+      </div> <!-- end content -->
+      <div id="footer">
+        <p> I am the footer, and you have scroll down to see me.</p>
+      </div> <!-- end footer -->
+    </div> <!-- end wrapper -->
+
+    /*hero header css below*/
+
+body  {
+  margin: 0 0;
+}
+
+#hero {
+  background-image: url(https://chrisaam.files.wordpress.com/2015/03/wallpaper-2846361.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 36px;
+}
+
+#content: {
+  padding: 100px 50px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#content h2 {
+  margin: 0 0 30px 0;
+}
+
+#footer {
+  padding: 30px 0;
+  text-align: center;
+  background: #ddd;
+}
+
+/*hero header css end*/
+
+hero js
+
+  // hero full screen header function
+  function fullscreen(){
+    jQuery('#hero').css({
+      width: jQuery(window).width(),
+      height: jQuery(window).height()
+    });
+  }
+  fullscreen();
+
+  // FOR HERO full screen header, run the function in case of window resize
+  jQuery(window).resize(function() {
+    fullscreen();
+  });

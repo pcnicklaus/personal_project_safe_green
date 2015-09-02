@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+  <!-- navbar begin's here!! -->
+  <header>
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Safe Green</a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Calculator <span class="sr-only">(current)</span></a></li>
+
+
+          <!-- About DropDown Menu Stuffs -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Methods</a></li>
+              <!-- <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li> -->
+            </ul>
+          </li>
+
+
+          <!-- Reco's navbar dropdown stuffs -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reco's <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Type</a></li>
+              <li><a href="#">THC</a></li>
+              <li><a href="#">Method</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">Food</a></li>
+              <li><a href="#">Fun</a></li>
+            </ul>
+          </li>
+
+          <!-- Contact Menu Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Email</a></li>
+              <li><a href="#">To Help</a></li>
+              <li><a href="#">To Donate</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+
+    <!-- Main call to action section -->
+
+        <div class="content container">
+            <div class="row=fluid">
+                <div class="col-lg-12">
+                  <div>
+                    <h1 id="safe-green-title">Safe Green</h1>
+                    <h3 id="subhead">Helping Adults Safely Enjoy MMJ Products</h3>
+                  </div>
+                </div>
+            </div>
+        </div>
+  </header>
+
+    <!-- SELECT ROWS START HERE  -->
+
+
+    <div class="section">
+        <div class="row-fluid">
+          <div class="content container">
+            <p> To start, Safe Green wants to alert everyone that clinical research is lacking on many different aspects of marijuana consumption. The differing rates of individual absorption is affected by many different factors and what one person experiences as a pleasant high can cause another person to experience supreme shock. As one of our Safe Green’s most important goals is to try inform you to the best of our knowledge, we’re going to present present the numbers as we found them. That being said, let’s do some math.
+            </p>
+
+            <div class="col-sm-6 col-sm-offset-1">
+              <p>One of the most visible and relevant statistics that can truly help one understand how much marijuana to consume comes from this formula:
+              </p>
+
+              <div class="well"> THC percentage  x  THC transfer rate of the smoking Method </div>
+              <p>
+                The thc percentage comes is based on 1 gram system so 20% thc means there is 200 milligrams of THC in one gram. Pop your numbers in the calculator to get this first value:
+              </p>
+            </div>
+            <div class="col-xs-2">
+              <label for="THC Percentage">THC Percentage</label>
+              <input class="form-control" id="smoking-thc" type="text">
+              <p> X </p>
+              <label for="Smoking Method Select">Smoking Method</label>
+              <select class="form-control" id="smoking-method">
+                  <option value="0.20">joint</option>
+                  <option value="0.25">water pipe</option>
+                  <option value="0.18">bong</option>
+                  <option value="0.1">vaporizer</option>
+              </select>
+              <button id="smoking-submit" type="submit" class="btn btn-default">Submit</button>
+              <div id="smoking-output"></div>
+            </div>
+          </div>
+          <div class="content container">
+            <div class="col-sm-6 col-sm-offset-1">
+              <p>So that means if you smoke 1 gram, you would consume + VAR + milligrams of THC. Now, how we use this number, is a bit of challenge for several reasons. First and again, there is little clinical research, second, this figure is going to vary from person to person based on several factors. One of which is Body Mass Index (BMI). THC is absorbed and stored in fat cells so those with a higher BMI will presumably need to consume less to achieve a high. For our purposes, we’re going to call that a 10% influence on the amount you should use but please do not think this figure is based on anything more then a best guess.
+              </p>
+            </div>
+            <div class="col-xs-2">
+              <br>
+              <label for="body mass select">Enter Your Body Mass Index</label>
+              <select class="form-control" id="userBMI">
+                  <option value="1">low</option>
+                  <option value="0.95">medium</option>
+                  <option value="0.9">high</option>
+              </select>
+              <button id="bmi-submit" type="submit" class="btn btn-default">Submit</button>
+              <div id="bmi-output"></div>
+            </div>
+          </div>
+          <div class="content container">
+            <div class="col-sm-6 col-sm-offset-1">
+              <p>Our running total of total thc per gram is now at + VAR +. The final factor we will take into effect is weight. Again, the science is lacking but there was one study that stated that the minimum dose of THC required to get a person high is 10 micrograms per kilogram (2.2lbs) of body weight. Which would mean that a 150 lb person would only need to consume 680 micrograms of thc which is not even a full milligram of THC. Considering the standard serving size for an edible is 10 milligrams AND their absorption rates are much higher then smoking, for our purposes and in the interest of safety, we are going to set the base level of thc 4 milligrams of THC to provide a high for a 150 lb person.
+              </p>
+            </div>
+            <div class="col-xs-2">
+              <br>
+              <label for="weight select">Enter Your Weight</label>
+              <input class="form-control" id="user-weight" type="text">
+              <button id="weight-submit" type="submit" class="btn btn-default">Submit</button>
+              <div id="weight-output"></div>
+            </div>
+          </div>
+        </div> <!-- end row-fluid -->
+
+        <div class="content container">
+          <h3>Edibles</h3>
+          <p>Much of the reason for the creation of Safe Green comes from the misunderstanding of first time consumers and edibles. Much of this confusion comes from the lack of understanding of how many milligrams of THC is a healthy and responsible first dose. Colorado law makers recently passed new regulations setting the state’s recommended dose at 10 milligrams. We believe that is too high as 10 milligrams is the same amount often recommended by physicians to stem nausea from chemotherapy. </p>
+
+          <div class="row-fluid">
+
+            <div class="col-sm-6 col-sm-offset-1">
+              <p>The first factor that will affect the appropriate dosage is weight. As in the smoking example above, we are going to peg the ratio of 5 mg of THC for a 150lb male with a low BMI and a high metabolism.
+              </p>
+
+            </div>
+
+            <div class="form-group col-sm-3">
+                <label for="Weight Select">Weight:</label>
+                <input class="form-control" id="edible-weight" type="text">
+                <button id="edible-weight-submit" type="submit" class="btn btn-default">Submit</button>
+            </div>
+
+          </div> <!-- row fluid -->
+
+
+          <div class="row-fluid">
+            <div class="col-sm-6 col-sm-offset-1">
+              <p>With edibles, BMI is also quite important. Especially considering the THC is processed in the liver and is turned into a the more potent 11-hydroxy-THC which tends to have a stronger more sedative effect Again for our purposes, we’re going to call that a 10% influence on the amount you should use but please do not think this figure is based on anything more then a best guess.</p>
+
+            </div> <!-- col-sm-6 col-sm-offset-1 -->
+
+            <div class="col-sm-3">
+              <label for="body mass edible select">Enter Your BMI</label>
+              <select class="form-control" id="userEdibleBMI">
+                  <option value="1">low</option>
+                  <option value="0.95">medium</option>
+                  <option value="0.9">high</option>
+              </select>
+              <button id="bmi-edible-submit" type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div> <!-- end row -->
+
+           <div class="row-fluid">
+            <div class="col-sm-6 col-sm-offset-1">
+              <p>Metabolism seems to have more of an effect with edibles then with the smoking. The higher the metabolism, the quicker the processing of the THC. Like with BMI, we're going to assume a 10% effect at most.</p>
+
+            </div> <!-- col-sm-6 col-sm-offset-1 -->
+
+            <div class="col-xs-3">
+              <label for="metablism edible select">Enter Your Metabolism</label>
+              <select class="form-control" id="userEdibleMetabolism">
+                  <option value="0.9">low</option>
+                  <option value="0.95">medium</option>
+                  <option value="1">high</option>
+              </select>
+              <button id="metabolism-edible-submit" type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div> <!-- end row -->
+
+
+        </div> <!-- content container -->
+
+      </div> <!-- end container fluid -->
+    <!-- SELECT ROWS END HERE -->
+
+    <div class="container-fluid recos">
+        <div class="row-fluid">
+
+          <div class="col-lg-12 recos">
+            <p> recos </p>
+          </div>
+
+        </div> <!-- row-fluid -->
+    </div><!--  container fluid -->
+
+
+ <!-- edible select begin -->
+
+
+            <!-- ediblie select end -->
+
+
+    <div class="container-fluid recos">
+        <div class="row-fluid">
+
+          <div class="col-lg-12 recos">
+            <p> recos </p>
+          </div>
+
+        </div> <!-- row-fluid -->
+    </div><!--  container fluid -->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+
+    </div>
+  </body>
+</html>

@@ -2,59 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Untitled</title>
+    <title>Safe Green</title>
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:bold" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Roboto' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Asap:bold" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
     <div id="header">
 
-
-
-
+      <!-- Navbar and stuff - need to rework -->
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
+
+          <!-- Navbar logo -->
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scorll" href="#page-top">
               <img alt="Brand" src="images/safe_green_logo_reduced2.gif">
             </a>
           </div>
+
+          <!-- Navbar list items -->
+         <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#home">Home<span class="sr-only">(current)</span></a></li>
-              <li><a href="#calculators">Calculators<span class="sr-only"></span></a></li>
-              <!-- About DropDown Menu Stuffs -->
-               <!-- <li class="dropdown">
-                <a href="#calculators" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculators<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Smoking</a></li>
-                  <li><a href="#">Edibles</a></li>
-                </ul>
-              </li> -->
-              <li><a href="#about">About Us<span class="sr-only"></span></a></li>
-
-              <!-- Reco's navbar dropdown stuffs -->
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reco's <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Type</a></li>
-                  <li><a href="#">THC</a></li>
-                  <li><a href="#">Method</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Activities</a></li>
-                  <li><a href="#">Food</a></li>
-                  <li><a href="#">Fun</a></li>
-                </ul>
-              </li>
-
-              <!-- Contact Menu Dropdown -->
-              <li><a href="#contact">Contact Us<span class="sr-only"></span></a></li>
-
-          </ul>
+            <li><a class="page-scroll" href="#home">Home<span class="sr-only">(current)</span></a></li>
+            <li><a class="page-scroll" href="#calculators">Calculators<span class="sr-only"></span></a></li>
+            <li><a class="page-scroll" href="#recommendations">Recos<span class="sr-only"></span></a></li>
+            <li><a class="page-scroll" href="#about">About Us<span class="sr-only"></span></a></li>
+            <li><a class="page-scroll" href="#contact">Contact Us<span class="sr-only"></span></a></li>
+          </ul> <!-- end navbar list items -->
         </div> <!-- end container fluid -->
-      </nav>
+      </nav> <!-- end navbar  -->
+
+
+
+      <!-- home page contents -->
       <div class="page" id="home">
         <div class="container content">
           <div>
@@ -64,20 +55,22 @@
           <br>
           <div class="row grey">
             <div class="col-sm-12">
-            <br>
+              <br>
               <p>
-                To start, Safe Green wants to alert   everyone that clinical research is lacking on many different aspects of marijuana consumption. The differing rates of individual absorption is affected by many different factors and what one person experiences as a pleasant high can cause another person to experience supreme shock.
+                To start, Safe Green wants to alert everyone that clinical research is lacking on many different aspects of marijuana consumption. The differing rates of individual absorption is affected by many different factors and what one person experiences as a pleasant high can cause another person to experience supreme shock.
               </p>
               <p>
                 As one of our Safe Green’s most important goals is to try inform you to the best of our knowledge, we’re going to present present the numbers as we found them. That being said, let’s do some math.
               </p>
               <br>
-            </div>
+            </div> <!-- end col-sm-12 -->
           </div>
         </div> <!-- container content -->
-      </div> <!-- end header stuffs -->
-    </div>
+      </div> <!-- end home stuffs -->
+    </div> <!-- end header area -->
 
+
+    <!-- calculators accordian begin -->
     <div class="container dark-grey-background" id="calculators">
       <h2 class="center">Calculators</h2>
       <div class="panel-group " id="accordion">
@@ -89,12 +82,6 @@
           </div>
           <div id="collapse1" class="panel-collapse collapse">
             <div class="panel-body">
-
-              <!-- <div class="row">
-                <div class="col-sm-12 center">
-                  <h3>Smoking Calculator</h3>
-                </div>
-              </div>  -->
               <div class="row" id="smoking-step-one">
                 <div class="col-sm-5 col-sm-offset-1 smoking-step-one">
                     <h4>Step One:</h4>
@@ -103,93 +90,101 @@
 
                     <div class="well"> THC percentage  x  THC transfer rate of the smoking Method </div>
                     <p>
-                      The thc percentage comes is based on 1 gram system so 20% thc means there is 200 milligrams of THC in one gram. Pop your numbers in the calculator to get this first value:
+                      The THC percentage is based on 1 gram system so 20% thc means there is 200 milligrams of THC in one gram. Pop your numbers in the calculator to get this first value:
                     </p>
-                </div>
+                </div> <!-- end smoking-step-one part a -->
+
                 <div class="col-sm-2 smoking-step-one">
-                    <br>
-                    <br>
-                    <label for="THC Percentage">THC Percentage</label>
-                    <input class="form-control" id="smoking-thc" type="text">
-                    <p> X </p>
-                    <label for="Smoking Method Select">Smoking Method</label>
-                    <select class="form-control" id="smoking-method">
-                      <option value="0.20">joint</option>
-                      <option value="0.25">water pipe</option>
-                      <option value="0.18">bong</option>
-                      <option value="0.1">vaporizer</option>
-                    </select>
-                    <button id="smoking-submit" type="submit" class="btn btn-default">Submit</button>
-                </div>
+                  <br>
+                  <br>
+                  <label for="THC Percentage">THC Percentage</label>
+                  <input class="form-control" id="smoking-thc" type="text">
+                  <p> X </p>
+                  <label for="Smoking Method Select">Smoking Method</label>
+                  <select class="form-control" id="smoking-method">
+                    <option value="0.20">joint</option>
+                    <option value="0.25">water pipe</option>
+                    <option value="0.18">bong</option>
+                    <option value="0.1">vaporizer</option>
+                  </select> <!-- end select -->
+                  <button id="smoking-submit" type="submit" class="btn btn-default">Submit</button>
+                </div> <!-- end smoking-step-two column b-->
                 <div class="col-sm-offset-1 col-sm-2 smoking-step-one">
-                    <br>
-                    <div id="total-thc-holder"></div>
-                </div>
+                  <br>
+                  <div id="total-thc-holder"></div>
+                </div> <!-- end accordian step One column c -->
               </div> <!-- end row -->
+
+              <!-- begin accordion step two -->
               <div class="row">
                 <div class="col-sm-5 col-sm-offset-1 smoking-step-two">
-                    <h4>Step Two:</h4>
-                    <p>Now, how we use this number, is a bit of challenge for several reasons. First and again, there is little clinical research, second, this figure is going to vary from person to person based on several factors. One of which is Body Mass Index (BMI). THC is absorbed and stored in fat cells so those with a higher BMI will presumably need to consume less to achieve a high. For our purposes, we’re going to call that a 10% influence on the amount you should use but please do not think this figure is based on anything more then a best guess.
-                    </p>
+                  <h4>Step Two:</h4>
+                  <p>Now, how we use this number, is a bit of challenge for several reasons. First and again, there is little clinical research, second, this figure is going to vary from person to person based on several factors. One of which is Body Mass Index (BMI). THC is absorbed and stored in fat cells so those with a higher BMI will presumably need to consume less to achieve a high. For our purposes, we’re going to call that a 10% influence on the amount you should use but please do not think this figure is based on anything more then a best guess.
+                  </p>
                 </div> <!-- col-sm-5 col-sm-offset-2 -->
                 <div class="col-sm-2 smoking-step-two">
-                    <br>
-                    <br>
-                    <br>
-                    <label for="body mass select">Enter Your Body Mass Index</label>
-                    <select class="form-control" id="userBMI">
-                        <option value="1">low</option>
-                        <option value="0.95">medium</option>
-                        <option value="0.9">high</option>
-                    </select>
-                    <button id="bmi-submit" type="submit" class="btn btn-default">Submit</button>
+                  <br>
+                  <br>
+                  <br>
+                  <label for="body mass select">Enter Your Body Mass Index</label>
+                  <select class="form-control" id="userBMI">
+                      <option value="1">low</option>
+                      <option value="0.95">medium</option>
+                      <option value="0.9">high</option>
+                  </select>
+                  <button id="bmi-submit" type="submit" class="btn btn-default">Submit</button>
                 </div> <!-- col-sm-5 col-sm-offset-2 -->
                 <div class="col-sm-offset-1 col-sm-2 smoking-step-two">
                     <div id="user-total-smoking-holder"></div>
-                </div>
-              </div> <!-- end row -->
+                </div> <!-- end col-sm-offset-1 -->
+              </div> <!-- end row --> <!-- end accordion step two -->
+
+
+              <!-- begin accordian step 3 -->
               <div class="row">
                 <div class="col-sm-5 col-sm-offset-1 smoking-step-three">
-                    <h4>Step Three:</h4>
-                    <p>The final factor we will take into effect is weight. One study stated that the minimum dose of THC required to get a person high is 10 micrograms per kilogram (2.2lbs) of body weight. Which would mean that a 150 lb person would only need to consume 680 micrograms of thc which is not even a full milligram of THC. Considering the standard serving size for an edible is 10 milligrams AND their absorption rates are much higher then smoking, for our purposes and in the interest of safety, we are going to set the base level of thc 5 milligrams of THC to provide a high for a 150 lb person.
-                    </p>
+                  <h4>Step Three:</h4>
+                  <p>The final factor we will take into effect is weight. One study stated that the minimum dose of THC required to get a person high is 10 micrograms per kilogram (2.2lbs) of body weight. Which would mean that a 150 lb person would only need to consume 680 micrograms of thc which is not even a full milligram of THC. Considering the standard serving size for an edible is 10 milligrams AND their absorption rates are much higher then smoking, for our purposes and in the interest of safety, we are going to set the base level of thc 5 milligrams of THC to provide a high for a 150 lb person.
+                  </p>
                 </div> <!-- col-sm-5 col-sm-offset-2 -->
                 <div class="col-sm-2 smoking-step-three">
-                    <br>
-                    <br>
-                    <br>
-                    <label for="weight select">Enter Your Weight</label>
-                    <input class="form-control" id="user-weight" type="text">
-                    <button id="weight-submit" type="submit" class="btn btn-default">Submit</button>
+                  <br>
+                  <br>
+                  <br>
+                  <label for="weight select">Enter Your Weight</label>
+                  <input class="form-control" id="user-weight" type="text">
+                  <button id="weight-submit" type="submit" class="btn btn-default">Submit</button>
                 </div>
-                <div class="col-sm-offset-1 col-sm-2 smoking-step-three">
-                    <div id="recommendation-holder"></div>
-                </div>
-              </div> <!-- end row -->
+                <div class="col-sm-offset-1 col-sm-2 smoking-step-three"> <!-- col-sm-2 smoking-step-three -->
+                  <div id="recommendation-holder"></div>
+                </div> <!-- col-sm-offset-1  -->
+              </div> <!-- end row --> <!-- end smoking step 3 -->
 
 
 
-            </div>
-          </div>
-        </div>
+            </div> <!-- end accordion SMOKING panel body -->
+          </div> <!-- end accoridon SMOKING collapse -->
+        </div> <!-- end panel panel-default -->
+
+        <!-- Panel 2 smoking -->
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title center">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Edibles</a>
             </h4>
-          </div>
+          </div> <!-- end panel-heading -->
           <div id="collapse2" class="panel-collapse collapse">
             <div class="panel-body">
               <div class="container content">
 
                 <h3>Edibles</h3>
                 <p>Much of the reason for the creation of Safe Green comes from the misunderstanding of first time consumers and edibles. Much of this confusion comes from the lack of understanding of how many milligrams of THC is a healthy and responsible first dose. Colorado law makers recently passed new regulations setting the state’s recommended dose at 10 milligrams. We believe that is too high as 10 milligrams is the same amount often recommended by physicians to stem nausea from chemotherapy. </p>
-
               </div> <!-- container content -->
+
               <div class="row">
                 <div class="col-sm-12 center">
                   <h3>Edible Calculator</h3>
-                </div>
+                </div> <!-- end col-sm-12 -->
               </div> <!-- row -->
               <div class="row">
                 <div class="col-sm-5 col-sm-offset-1">
@@ -198,59 +193,113 @@
                     </p>
                 </div><!-- col-sm-5 col-sm-offset-2 -->
                 <div class="col-sm-2 edibles-step-one">
-                    <br>
-                    <label for="Weight Select">Enter Your Weight:</label>
-                    <input class="form-control" id="edible-weight" type="text">
-                    <button id="edible-weight-submit" type="submit" class="btn btn-default">Submit</button>
+                  <br>
+                  <label for="Weight Select">Enter Your Weight:</label>
+                  <input class="form-control" id="edible-weight" type="text">
+                  <button id="edible-weight-submit" type="submit" class="btn btn-default">Submit</button>
                 </div> <!-- col-sm-2 -->
                 <div class="col-sm-offset-1 col-sm-2 edibles-step-one">
                     <div id="edible-step-one-holder"></div>
-                </div>
+                </div> <!-- edibles-step-one -->
               </div> <!-- row -->
-              <div class="row">
+
+              <div class="row"> <!-- begin edibles step two -->
                 <br>
                 <div class="col-sm-5 col-sm-offset-1 edibles-step-two">
-                    <h4>Step Two:</h4>
-                    <p>With edibles, BMI is also quite important. Especially considering the THC is processed in the liver and is turned into a the more potent 11-hydroxy-THC which tends to have a stronger more sedative effect Again for our purposes, we’re going to call that a 10% influence on the amount you should use but please do not think this figure is based on anything more then a best guess.</p>
+                  <h4>Step Two:</h4>
+                  <p>With edibles, BMI is also quite important. Especially considering the THC is processed in the liver and is turned into a the more potent 11-hydroxy-THC which tends to have a stronger more sedative effect Again for our purposes, we’re going to call that a 10% influence on the amount you should use but please do not think this figure is based on anything more then a best guess.</p>
                 </div><!-- col-sm-5 col-sm-offset-2 -->
                 <div class="col-sm-2 edibles-step-two">
-                    <br>
-                    <label for="body mass edible select">Enter Your BMI</label>
-                    <select class="form-control" id="userEdibleBMI">
-                      <option value="1">low</option>
-                      <option value="0.95">medium</option>
-                      <option value="0.9">high</option>
-                    </select>
-                    <button id="bmi-edible-submit" type="submit" class="btn btn-default">Submit</button>
-                </div> <!-- end col-sm-2 -->
-                 <div class="col-sm-offset-1 col-sm-2 edibles-step-two">
+                  <br>
+                  <label for="body mass edible select">Enter Your BMI</label>
+                  <select class="form-control" id="userEdibleBMI">
+                    <option value="1">low</option>
+                    <option value="0.95">medium</option>
+                    <option value="0.9">high</option>
+                  </select>
+                  <button id="bmi-edible-submit" type="submit" class="btn btn-default">Submit</button>
+                </div> <!-- end col-sm-2 edibles step 2-->
+                <div class="col-sm-offset-1 col-sm-2 edibles-step-two">
                     <div id="edible-step-two-holder"></div>
-                </div>
+                </div> <!-- end edibles step 2 holder -->
               </div> <!-- end row -->
+
+              <!-- edibles accoridion step 3 -->
               <div class="row" id="edibles-step-three">
                 <br>
                 <div class="col-sm-5 col-sm-offset-1 edibles-step-three">
-                    <h4>Step Three:</h4>
-                    <p>Metabolism seems to have more of an effect with edibles then with the smoking. The higher the metabolism, the quicker the processing of the THC. Like with BMI, we're going to assume a 10% effect at most.</p>
-                </div>
+                  <h4>Step Three:</h4>
+                  <p>Metabolism seems to have more of an effect with edibles then with the smoking. The higher the metabolism, the quicker the processing of the THC. Like with BMI, we're going to assume a 10% effect at most.</p>
+                </div> <!-- end edibles-step-three part a -->
+
                 <div class="col-sm-2 edibles-step-three">
-                    <label for="metablism edible select">Enter Your Metabolism</label>
-                    <select class="form-control" id="userEdibleMetabolism">
-                      <option value="0.9">low</option>
-                      <option value="0.95">medium</option>
-                      <option value="1">high</option>
-                    </select>
-                    <button id="metabolism-edible-submit" type="submit" class="btn btn-default">Submit</button>
-                </div> <!-- end col-sm-2 -->
+                  <label for="metablism edible select">Enter Your Metabolism</label>
+                  <select class="form-control" id="userEdibleMetabolism">
+                    <option value="0.9">low</option>
+                    <option value="0.95">medium</option>
+                    <option value="1">high</option>
+                  </select>
+                  <button id="metabolism-edible-submit" type="submit" class="btn btn-default">Submit</button>
+                </div> <!-- end col-sm-2 end edibles step 3 b -->
+
                 <div class="col-sm-offset-1 col-sm-2 edibles-step-three">
                     <div id="edible-step-three-holder"></div>
-                </div>
+                </div> <!-- end edibles step 3 c -->
               </div> <!-- end row -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </div> <!-- end panel-body -->
+          </div> <!-- end collapse 2 -->
+        </div> <!-- end panel panel default -->
+      </div> <!-- end accordion panel-group  -->
+    </div> <!-- end calculators container -->
+
+
+    <!-- RECOMMENDATIONS PAGE -->
+    <div class="container" id="recommendations">
+      <h2 class="center">Recommendations</h2>
+      <br>
+      <h3>Marijuana</h3>
+      <p>We always recommend sativas, uplifting, go out and do something high, over indicas, heady, cerebral yet couch-locked stoning, for first time users.
+      <div class="row">
+        <div id="marijuana-reco-holder">
+        </div> <!-- end "marijuana-reco-holder" -->
+      </div> <!-- end row -->
+      <div class="row">
+        <button id="marijuana-reco-button" type="button" class="btn btn-default">Make a recommendation</button>
+        <div class="form-group" id="marijuana-reco-form">
+          <div class="row">
+            <div class="col-sm-2">
+              <label for="Name">Name</label>
+              <input class="form-control" id="name-reco" type="text">
+            </div> <!-- end col-sm-2 -->
+            <div class="col-sm-2">
+              <label for="strain">Sativa or Indica</label>
+              <input class="form-control" id="strain-reco" type="text">
+            </div> <!-- end col-sm-2 -->
+            <div class="col-sm-2">
+              <label for="THC Percentage">THC Percentage</label>
+              <input class="form-control" id="smoking-thc-reco" type="text">
+            </div> <!-- end col-sm-2 -->
+            <div class="col-sm-2">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="3" id="user-reco-comment"></textarea>
+            </div> <!-- end col-sm-2 -->
+            <div class="col-sm-2">
+              <label for="user-reco-dynamic-submit">Here it is.</label>
+              <button class="form-control" id="user-reco-marijuana-submit" type="submit" class="btn btn-default">Submit</button>
+            </div> <!-- end col-sm-2 -->
+          </div> <!-- end row -->
+        </div> <!-- end form group marijuana reco form -->
+      </div> <!-- end row -->
+      <h3>Edibles</h3>
+      <p>Again, we always recommend sativa's over indica's. Also, do be careful as most edibles are very strong, normally coming in doses over 10 milligrams.
+      <div class="row">
+        <div id="edible-reco-holder">
+        </div> <!-- end edible-reco-holder -->
+      </div><!-- end row -->
+    </div> <!-- end "container" id="recommendations" -->
+
+
+
 
     <!-- About us -->
     <div class="container content green-background" id="about">
@@ -260,7 +309,7 @@
       <br>
       <div class="col-sm-6 col-sm-offset-3">
         <h2 class="center">About us</h2>
-      </div>
+      </div> <!-- end col-sm-6 -->
       <div class="col-sm-6 col-sm-offset-3">
         <br>
         <br>
@@ -275,7 +324,7 @@
         <br>
         <br>
         <br>
-      </div>
+      </div> <!-- end col-sm-6 -->
     </div><!-- container content -->
 
     <!-- Research -->
@@ -285,7 +334,7 @@
       <br>
       <div class="col-sm-6 col-sm-offset-3">
         <h2 class="center">Research</h2>
-      </div>
+      </div> <!-- end col-sm-6 -->
       <div class="col-sm-6 col-sm-offset-3">
         <!-- need to finish linking below -->
         <br>
@@ -297,29 +346,10 @@
         <br>
         <br>
         <br>
-      </div>
+      </div> <!-- end col-sm-6  -->
     </div><!-- container content -->
 
-    <div class="container" id="recommendations">
-      <h2 class="center">Recommendations</h2>
-      <br>
-      <br>
-      <br>
-      <h3>Marijuana</h3>
-      <p>We always recommend sativas, uplifting, go out and do something high, over indicas, heady, cerebral yet couch-locked stoning, for first time users.
-      <div id="row">
-        <div id="marijuana-reco-holder">
-<!--           <div class="col-sm-2">
-            <img src="images/Cataract-Kush-Marijuana-Bud.jpg" class="img-responsive" alt="">
-            <h4>Brian</h4>
-            <p>Cataract Kush<br>
-            Sattiva<br>
-            24%
-            </p>
-          </div> -->
-        </div>
-      </div>
-    </div>
+
 
     <!-- contact us -->
     <div class="container green-background" id="contact">
@@ -357,8 +387,8 @@
         <br>
         <br>
         <br>
-      </div>
-    </div>
+      </div> <!-- end col-sm-6 -->
+    </div> <!-- end contact container -->
 
 
 
@@ -368,26 +398,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
-    <!-- age verification modal -->
-    <!-- <div class="modal" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="ageModalLabel">Age Verification</h4>
-          </div>
-          <div class="modal-body">
-          <div class="form" id="age-verification-window">
-            <form name="age-verification-form">
-              <h3>You must be 21 or over to enter</h3>
-              <input class="age-ver" type="text" id="month" placeholder="Month" maxlength="2">
-              <input class="age-ver" type="text" id="day" placeholder="Day" maxlength="2">
-              <input class="age-ver" type="text" id="year" placeholder="Year" minlength="4" maxlength="4">
-              <button type="submit" id="age-verification-submit" class="btn btn-default" data-dismiss="modal">submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <!-- modal goes here -->
+
 
 
 

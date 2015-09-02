@@ -1,9 +1,28 @@
 
+@media screen and (max-width: 1500px) {
+    #safe-green-title {
+    padding-top: 330px;
+    padding-bottom: 10px;
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  #safe-green-title {
+    padding-top: 150px;
+    padding-bottom: 10px;
+    font-size: 4em;
+  }
+}
+
+
+/*header background image and size*/
 #header {
     color: #fff;
 /*    background: #18bc9c;*/
     background-image: url("../images/safe_green_background4.jpg");
     height: 780px;
+/*    margin-bottom: 50px;*/
 }
 
 /*give the body a bit of padding bc of navbar*/
@@ -22,40 +41,23 @@ body {
   font-size: 1.3em;
 }
 
+
+
+
+/*Helper CSS CLASSES*/
 .center {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', Georgia, Times, serif;
-}
-p, div {
-    font-family: 'Asap', Helvetica, Arial, sans-serif;
-}
-
-#recommendations {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-/*how do i get the append to stay in the same spot*/
-#total-thc-holder {
-}
-
-#safe-green-title {
-  padding-top: 370px;
-  padding-bottom: 10px;
-  font-size: 5em;
-}
-
 .grey {
   background: rgba(15, 15, 15, 0.7);
-
+  padding-top: 10px;
 }
 
 .dark-grey-background {
   background: rgba(124, 131, 123, 0.29);
   min-width: 100%;
+  padding-top: 20px;
 }
 
 .green-background {
@@ -63,33 +65,33 @@ p, div {
   min-width: 100%;
 }
 
+.right {
+  text-align: right
+}
 
+ /*fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Asap', Helvetica, Arial, sans-serif;
+}
+
+/*Recommendations page padding need to do this for everyone and get rid of the <br>s*/
+#recommendations {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*calculators page padding */
 #calculators {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.center {
-  text-align: center;
-}
 
-.right {
-  text-align: right
-}
-
-.form-inline {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
+/*controls the width of the form entries MIGHT NEED TO CHANGE THIS*/
 .form-control {
   width: 200px;
 }
 
-.recos {
-    color: red;
-    background-color: #18bc9c;
-    height: 100px;
-    margin-left: -10px;
-    margin-top: 30px;
-}
