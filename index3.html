@@ -19,10 +19,10 @@
           <!-- Navbar logo -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scorll" href="#page-top">
               <img alt="Brand" src="images/safe_green_logo_reduced2.gif">
@@ -390,6 +390,26 @@
       </div> <!-- end col-sm-6 -->
     </div> <!-- end contact container -->
 
+    <!-- age verification modal -->
+    <div class="modal" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="ageModalLabel">Age Verification</h4>
+          </div>
+          <div class="modal-body">
+          <div class="form" id="age-verification-window">
+            <form name="age-verification-form">
+              <h3>You must be 21 or over to enter</h3>
+              <input class="age-ver" type="text" id="month" placeholder="Month" maxlength="2">
+              <input class="age-ver" type="text" id="day" placeholder="Day" maxlength="2">
+              <input class="age-ver" type="text" id="year" placeholder="Year" minlength="4" maxlength="4">
+              <button type="submit" id="age-verification-submit" class="btn btn-default" data-dismiss="modal">submit</button>
+            </form> <!-- end age verification form -->
+          </div> <!-- end age verification window -->
+        </div> <!-- end modal content -->
+      </div> <!-- end modal dialog -->
+    </div> <!-- end age verification modal -->
 
 
 
